@@ -1,0 +1,46 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="contact-area">
+        <div class="container">
+            <h5>Yangi Mavzu Qo'shish</h5>
+            <div class="row">
+            
+                <!-- Contact Form -->
+                <div class="col-12 col-md-12" id="main">
+      
+                    <div class="single-blog-area padding wow fadeInUp contact-form" data-wow-delay="250ms"">
+                        <form action="#" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="theme_name" class="form-control" id="name" placeholder="Mavzu Nomi">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="private" name="theme_type" value="0" checked="true">
+                                        <label class="custom-control-label" for="private">Shaxsiy</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="global" name="theme_type" value="1">
+                                        <label class="custom-control-label" for="global">Ommaviy</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="saveTheme" class="btn clever-btn w-10 margintop">Qo'shish</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+{% block js %}
+<script src={% static 'js/theme_add.js' %}></script>
+{% endblock js %}

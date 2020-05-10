@@ -1,0 +1,26 @@
+[
+  {
+    "question": "O'zbekiston poytaxti?",
+    "choice1": "Toshkent",
+    "choice2": "Samarkand",
+    "choice3": "Andijon",
+    "choice4": "Urganch",
+    "answer": 1
+  },
+  {
+    "question": "1+2=?",
+    "choice1": "1",
+    "choice2": "2",
+    "choice3": "3",
+    "choice4": "4",
+    "answer": 3
+  },
+  {
+    "question": "Hozir qaysi yil?",
+    "choice1": "2010",
+    "choice2": "2020",
+    "choice3": "2021",
+    "choice4": "2019",
+    "answer": 2
+  }
+]

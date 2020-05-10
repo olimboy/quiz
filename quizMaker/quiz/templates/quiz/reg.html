@@ -1,0 +1,42 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+            
+                <!-- Contact Form -->
+                <div class="col-12 col-md-12">
+                    <div class="single-blog-area padding wow fadeInUp contact-form" data-wow-delay="250ms"">
+                        <form action="#" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="login" id="login" placeholder="Login">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" name="password1" id="password1" placeholder="Parol">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Parolni tasdiqlang">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn clever-btn w-10" id="regBtn">Registratsiya</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+{% block js %}
+    <script src={% static 'js/reg.js' %}></script>
+{% endblock js %}

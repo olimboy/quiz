@@ -1,0 +1,49 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="contact-area">
+        <div class="container">
+            <h5>Yangi Lug'at Qo'shish</h5>
+            <div class="row">
+            
+                <!-- Contact Form -->
+                <div class="col-12 col-md-12" id="main">
+                    <div class="single-blog-area padding wow fadeInUp contact-form" data-wow-delay="250ms"">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                      <select id="themes" name="cars" class="custom-select">
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="en" placeholder="Inglizcha">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="uz" placeholder="O'zbekcha">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="min_ask">Minimal so'rashlar soni</label>
+                                        <input type="text" class="form-control" id="min_ask" value="10" placeholder="Minimal so'rashlar soni">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="saveNewWord" class="btn clever-btn w-10 ">Qo'shish</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+{% block js %}
+<script src={% static 'js/add.js' %}></script>
+{% endblock js %}

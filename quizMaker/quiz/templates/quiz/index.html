@@ -1,0 +1,84 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+<!-- ##### Hero Area Start ##### -->
+    <section class="hero-area bg-img bg-overlay-2by5"  style="background-image: url({% static 'img/bg-img/bg1.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <!-- Hero Content -->
+                    <div class="hero-content text-center">
+                        <h2>Biz bilan Ingliz tilini zamonaviy usulda tez o'rganing!</h2>
+                        <a href="/quiz/themes" class="btn clever-btn">Boshlash</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Cool Facts Area Start ##### -->
+    <section class="cool-facts-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">{{stat.user}}</span></h2>
+                        <h5>Foydalanuvchilar</h5>
+                    </div>
+                </div>
+
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">{{stat.theme}}</span></h2>
+                        <h5>Mavzular</h5>
+                    </div>
+                </div>
+
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">{{stat.dict}}</span></h2>
+                        <h5>Lug'atlar</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Cool Facts Area End ##### -->
+    <div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url({%static 'img/blog-img/4.jpg'%});">
+        <div class="blog-details-headline">
+            <h3>Loyiha haqida</h3>
+            {% comment %} <div class="meta d-flex align-items-center justify-content-center">
+                <a href="#">Sarah Parker</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="#">Art &amp; Design</a>
+            </div> {% endcomment %}
+        </div>
+    </div>
+    <!-- ##### Catagory Area End ##### -->
+
+    <!-- ##### Blog Details Content ##### -->
+    <div class="blog-details-content section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Blog Details Text -->
+                    <div class="blog-details-text">
+                        <p>Ushbu sayt orqali siz Ingliz tilini zamonaviy usulda o'rganishingiz mumkin. Asosan saytda interaktiv testlar bilan boyitilgan. Siz o'zingiz uchun lug'atlarni qo'shingiz va ushbu lug'atlar testlar ishlashingiz mumkin.</p>
+                        <h5 class="text-center py-4">Lug'atlarni qo'shishdan oldin Registratsiyadan o'tish kerak.!.</h5>
+                        <p>Lug'at qo'shishdan oldin mavzu qo'shishni unutmang. Dastlab mavzu qo'shiladi. Keyinchalik ushbu mavzuni ichiga lug'atlarni qo'shish mumkin.</p>
+                        <h5 class="text-center py-4">Afzalliklari:</h5>
+                        <p>Ushbu saytning afzalligi shundaki siz lug'at kiritayotgan ushbu lug'at sizdan necha marotoba so'rashini belgilay olasiz. Masalan 10 marta so'rash kerak deylik. Sizdan ushbu lug'at kamida 10 marta so'raladi agar hamma so'rovda to'gri javob bersangiz boshqa so'ralmaydi Yodlangan hisoblanadi. Agar xato javob bersangiz to to'gri javob berish ko'rsatgichi 95 % bo'lguncha sizdan qayta-qayta so'raladi.</p>
+                        <h5 class="text-center py-4">O'ziga hosligi:</h5>
+                        <p>Lug'atlarni talaffuz qilinishini Google TTS texnologiyasi orqali eshitish imkoni mavjud. Har bir test ishlayotgan vaqtingizda Inglizcha so'zlar avtomatik o'qib eshittiriladi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+{% endblock content %}

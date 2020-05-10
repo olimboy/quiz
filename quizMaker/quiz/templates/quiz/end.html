@@ -1,0 +1,28 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <h2>Natijalar: <span id="theme_name"></span></h2>
+        <div class="col-12 col-md-12">
+            <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="250ms">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>T/R</th>
+                      <th>Savol</th>
+                      <th>Javobingiz</th>
+                      <th>To'gri Javob</th>
+                      <th>Holat</th>
+                    </tr>
+                  </thead>
+                  <tbody id="main_table">
+                  </tbody>
+                </table>
+                <h5><span id="end"></span></h5>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+{% block js %}
+    <script src={% static 'js/end.js' %}></script>
+{% endblock js %}

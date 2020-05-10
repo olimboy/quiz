@@ -1,0 +1,71 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <h2 id="theme_name"></h2>
+        <div class="col-12 col-md-12">
+            <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="250ms">
+                <!-- <img src="img/blog-img/1.jpg" alt=""> -->
+                <!-- Blog Content -->
+                
+                <div class="blog-content">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h5>Savol <span id="progressText"></span></h5>
+                            <div class="progress" style="height:40px">
+                                <div class="progress-bar" id="progressBar" style="height:40px"></div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-md-4">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h5>Ball</h5>
+                             <div class="btn btn-primary" id="score">0</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <h4><span class="question" id="question_block"><span class="fa fa-play-circle"></span><span id="question"></span></span><span id="question_title"></span></h4>
+                    </div>
+                   
+                    <div class="card single-blog-area  wow fadeInUp radiogroup">
+                        <div class="card-body"> 
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customRadio" name="variant" value="customEx" data-prefix="a">
+                                <label class="custom-control-label" for="customRadio">Variant 1</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card single-blog-area wow fadeInUp radiogroup">
+                        <div class="card-body"> 
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customRadio2" name="variant" value="customEx" data-prefix="b">
+                                <label class="custom-control-label" for="customRadio2">Variant 2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card single-blog-area wow fadeInUp radiogroup">
+                        <div class="card-body"> 
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customRadio3" name="variant" value="customEx" data-prefix="c">
+                                <label class="custom-control-label" for="customRadio3">Variant 3</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card single-blog-area wow fadeInUp radiogroup">
+                        <div class="card-body"> 
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customRadio4" name="variant" value="customEx" data-prefix="d">
+                                <label class="custom-control-label" for="customRadio4">Variant 4</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+{% block js %}
+    <script src={% static 'js/game.js' %}></script>
+{% endblock js %}

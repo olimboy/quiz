@@ -1,0 +1,57 @@
+{% extends 'quiz/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="blog-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>Tanlang</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6">
+                    <a href="/quiz/en-uz" onclick="en()">
+                        <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="250ms">
+                            <img src={% static "img/en.gif" %} alt="">
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <div class="blog-headline">
+                                    <h4>Inglizcha - O'zbekcha</h4>
+                                </div>
+                                <p>Bu blokda sizga lug'at inglizcha variantlar o'zbekcha taqdim qilinadi</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6">
+                    <a href="/quiz/uz-en" onclick="uz()">
+                        <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                            <img src={% static "img/uz.gif" %} alt="">
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <div class="blog-headline">
+                                    <h4>O'zbekcha - Inglizcha</h4>
+                                </div>
+                                <p>Bu blokda sizga lug'at o'zbekcha variantlar inglizcha taqdim qilinadi</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <script>
+                function en(){
+                    sessionStorage.setItem('lang', 'en');
+                }
+                function uz(){
+                    sessionStorage.setItem('lang', 'uz');
+                }
+                </script>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends 'quiz/base.html' %}
+{% block content %}
+    <div class="container">
+        <h2>Statistika <span id="theme_name"></span></h2>
+        <div class="col-12 col-md-12">
+            <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="250ms">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Inglizcha</th>
+                      <th>O'zbekcha</th>
+                      <th>To'gri Javoblar</th>
+                      <th>Noto'gri Javoblar</th>
+                      <th>Holat</th>
+                    </tr>
+                  </thead>
+                  <tbody id="main_table">
+                  {% for d in dicts %}
+                    <tr>
+                      <td>{{d.en}}</th>
+                      <td>{{d.uz}}</th>
+                      <td>{{d.correct}}</th>
+                      <td>{{d.incorrect}}</th>
+                      <td>
+                            <div class="progress" style="height:40px;">
+                                <div class="progress-bar" id="progressBar" style="width: {{d.percent}}%;height:40px">{{d.percent}}%</div>
+                            </div> 
+                      </th>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

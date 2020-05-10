@@ -1,0 +1,33 @@
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+.question:hover {
+    cursor: pointer;
+    color: #2c56df;
+}
+.question{
+    color: #2c56df;
+}
+.card{
+    margin: 0.7rem;
+}
+.margintop{
+    margin-top: 20px;
+}
+.padding{
+    padding: 20px;
+}
+.correct{
+    background-color: #2c56df;
+    color: white;
+}
+.incorrect{
+    background-color: red;
+    color: white;
+}
+.radiogroup{
+    font-size: large;
+}
